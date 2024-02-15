@@ -1,0 +1,504 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- ========== Bootstrap css ========== -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>Menu Web</title>
+
+  <style>
+  a:visited{
+    color:#fff;
+  }
+  .relleno{
+    object-fit: contain;
+    margin: 0 15px;
+    padding: 0;
+  }
+  .bg-color{
+    background-color: #111;
+  }
+  .custom-nav{
+    margin:auto;
+  }
+  .btn-custom{
+    border-radius:100px;
+  }
+  .btn-custom:hover{
+    color: #fff;
+    background-color: #214E34;
+    
+  }
+  .btn-custom:active{
+    color: #fff;
+    background-color: #880D1E;
+  }
+  .btn-color-custom{
+    background-color: #880D1E;
+  }
+  .align{
+    text-align:center;
+  
+  }
+  .align button{
+    color: #fff;
+    margin:5px;
+  }
+  .menu{
+    margin-top: 50px;
+    color: #fff;
+  }
+  .categoria-titulo{
+    text-align:center;
+    color: #214E34;
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .comida-nombre{
+    text-align:left;
+    color: #C57B57;
+  }
+  .comida-precio{
+    align-content: center;
+    border: 1px solid #214E34;
+    border-radius: 20px;
+    width: 115px;
+    padding-top: 5px;
+  }
+  .ingredientes{
+    font-size:15px;
+    text-align:left;
+    margin-bottom: 40px;
+    
+  }
+  </style>
+
+
+</head>
+<body class="bg-color">
+
+    <!-- ========== Start navbar ========== -->
+    
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand custom-nav" href="#">
+            <img src="{% static 'img/logo.png' %}" alt="Logo-Mom Kitchen" width="120" height="120" class="d-inline-block align-text-center relleno">
+          </a>
+        </div>
+      </nav>
+
+    <!-- ========== End navbar ========== -->
+    <a href=""></a>
+    <!-- ========== Start button navegation ========== -->
+    <div class="container">
+      <div class="row">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <!-- relleno -->
+        </div>
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 align">
+          <a href="#Promos"><button type="button" class="btn btn-color-custom btn-custom">Promos</button></a>
+          <a href="#Pizzas"><button type="button" class="btn btn-color-custom btn-custom">Pizzas</button></a>
+          <a href="#Hamburguesas"><button type="button" class="btn btn-color-custom btn-custom">Hamburguesas</button></a>
+          <a href="#Empanadas"><button type="button" class="btn btn-color-custom btn-custom">Empanadas</button></a>
+          <a href="#Especiales"><button type="button" class="btn btn-color-custom btn-custom">Especiales</button></a>
+          <a href="#Bebidas"><button type="button" class="btn btn-color-custom btn-custom">Bebidas</button></a>
+        </div>      
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <!-- relleno -->
+        </div>
+        
+      </div>      
+    </div>      
+    
+    <!-- ========== End button navegation ========== -->
+    
+
+
+
+    <!-- ========== Start Menu ========== -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="menu">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2 id="Promos" class="categoria-titulo "> Promos </h2>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h5 class="comida-nombre ">2 Hamburguesas c/papas + 1 Pizza Especial<h5>
+              </div>
+              <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <h5 class=" col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">$7300<h5>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <p class="ingredientes">
+                  2 medallones de carne, queso mozarella, papas, sal, aceite, vinagre, repollo, lechuga, tomate, aceituna, condimentos. 
+                </p>
+              </div>
+
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h5 class="comida-nombre ">2 Hamburguesas c/papas + 1 Pizza Especial<h5>
+              </div>
+              <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <h5 class="">$7300<h5>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <p class="ingredientes">
+                  2 medallones de carne, queso mozarella, papas, sal, aceite, vinagre, repollo, lechuga, tomate, aceituna, condimentos. 
+                </p>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h5 class="comida-nombre ">2 Hamburguesas c/papas + 1 Pizza Especial<h5>
+              </div>
+              <div class=" comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <h5 class="">$7300<h5>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <p class="ingredientes">
+                  2 medallones de carne, queso mozarella, papas, sal, aceite, vinagre, repollo, lechuga, tomate, aceituna, condimentos. 
+                </p>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h5 class="comida-nombre ">2 Hamburguesas c/papas + 1 Pizza Especial<h5>
+              </div>
+              <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <h5 class="">$7300<h5>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <p class="ingredientes">
+                  2 medallones de carne, queso mozarella, papas, sal, aceite, vinagre, repollo, lechuga, tomate, aceituna, condimentos. 
+                </p>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <h5 class="comida-nombre ">2 Hamburguesas c/papas + 1 Pizza Especial<h5>
+              </div>
+              <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <h5 class="">$7300<h5>
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <p class="ingredientes">
+                  2 medallones de carne, queso mozarella, papas, sal, aceite, vinagre, repollo, lechuga, tomate, aceituna, condimentos. 
+                </p>
+              </div>
+              <!-- ========== Cambio de categoria  ========== -->
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2 id="Pizzas" class="categoria-titulo "> Pizzas </h2>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza común<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$2000<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, aceituna. 
+                  </p>
+                </div>
+  
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Especial<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3200<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de anchoas<h5>
+                </div>
+                <div class=" comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3700<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, anchhoa, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Calabresa<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, calabresa, tomate, huevo, aceituna.                </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de jamón y morrón<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, morrón, tomate, huevo, aceituna.                </p>
+                </div>
+              <!-- ========== Cambio de categoria  ========== -->
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2 id="Hamburguesas" class="categoria-titulo "> Hamburguesas </h2>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Hamburguesa común<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$2000<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, aceituna. 
+                  </p>
+                </div>
+  
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Hamburguesa Especial<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3200<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Hamburguesa de anchoas<h5>
+                </div>
+                <div class=" comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3700<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, anchhoa, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Hamburguesa Calabresa<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, calabresa, tomate, huevo, aceituna.                </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Hamburguesa de jamón y morrón<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, morrón, tomate, huevo, aceituna.                </p>
+                  </div>
+
+              <!-- ========== Cambio de categoria  ========== -->
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2 id="Empanadas" class="categoria-titulo "> Empanadas </h2>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza común<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$2000<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, aceituna. 
+                  </p>
+                </div>
+  
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Especial<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3200<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de anchoas<h5>
+                </div>
+                <div class=" comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3700<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, anchhoa, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Calabresa<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, calabresa, tomate, huevo, aceituna.                
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de jamón y morrón<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, morrón, tomate, huevo, aceituna.                </p>
+                  </div>
+
+              <!-- ========== Cambio de categoria  ========== -->
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2 id="Especiales" class="categoria-titulo "> Especiales </h2>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza común<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$2000<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, aceituna. 
+                  </p>
+                </div>
+  
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Especial<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3200<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de anchoas<h5>
+                </div>
+                <div class=" comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3700<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, anchhoa, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Calabresa<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, calabresa, tomate, huevo, aceituna.                </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de jamón y morrón<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, morrón, tomate, huevo, aceituna.                </p>
+                </div>
+
+              <!-- ========== Cambio de categoria  ========== -->
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2 id="Bebidas" class="categoria-titulo "> Bebidas </h2>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre">Pizza común<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$2000<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, aceituna. 
+                  </p>
+                </div>
+  
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Especial<h5>
+                </div>
+                <div class="comida-precio ccol-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3200<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de anchoas<h5>
+                </div>
+                <div class=" comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3700<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, anchhoa, tomate, huevo, aceituna.
+                  </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza Calabresa<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, calabresa, tomate, huevo, aceituna.                </p>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <h5 class="comida-nombre ">Pizza de jamón y morrón<h5>
+                </div>
+                <div class="comida-precio col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                  <h5 class="">$3500<h5>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                  <p class="ingredientes">
+                    Prepiza casera, salsa de tomate, muzzarella, jamón cocido, morrón, tomate, huevo, aceituna.                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- ========== End Menu ========== -->
+    
+
+
+  
+    <!-- ========== Bootstrap js ========== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>
